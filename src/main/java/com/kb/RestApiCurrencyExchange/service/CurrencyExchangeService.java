@@ -44,7 +44,6 @@ public class CurrencyExchangeService {
     }
 
     private BigDecimal getAverageExchangeRate(ExchangeRateNBPResponse response) {
-        Object RateNBPResponse;
         return response.rates().stream().findFirst()
                 .map(RateNBPResponse::mid)
                 .orElseThrow(() -> new NoSuchElementException("Cannot get mid value from received data."));
@@ -72,7 +71,6 @@ public class CurrencyExchangeService {
     }
 
     private List<BigDecimal> getAvgRatesFromExchangeRateResponse(ExchangeRateNBPResponse response) {
-        Object RateNBPResponse;
         return response.rates().stream()
                 .map(RateNBPResponse::mid)
                 .toList();
@@ -124,4 +122,4 @@ public class CurrencyExchangeService {
                 .anyMatch(c -> c.name().equals(code));
     }
 }
-}
+
