@@ -3,7 +3,7 @@ package com.kb.RestApiCurrencyExchange.exchange_rate.nbp_api_response;
 import java.math.BigDecimal;
 import java.time.LocalDate;
 
-public class RateNBPResponse(
+public record RateNBPResponse(
         String no,
         LocalDate effectiveDate,
         BigDecimal mid,
