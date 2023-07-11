@@ -7,7 +7,7 @@ import java.math.BigDecimal;
 import java.time.LocalDate;
 
 @Builder
-public record   AverageExchangeRateResponse(
+public record AverageExchangeRateResponse(
         Currency currencyCode,
         String currencyName,
         LocalDate date,

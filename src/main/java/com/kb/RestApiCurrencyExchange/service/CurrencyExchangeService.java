@@ -122,4 +122,3 @@ public class CurrencyExchangeService {
                 .anyMatch(c -> c.name().equals(code));
     }
 }
-

@@ -7,10 +7,6 @@ import java.math.BigDecimal;
 import java.time.LocalDate;
 
 @Builder
-public record BidAskDifferenceResponse(
-        Currency currencyCode,
-        String currencyName,
-        BigDecimal majorDifference,
-        LocalDate date
-) {
+public record BidAskDifferenceResponse(Currency currencyCode, String currencyName, BigDecimal majorDifference,
+                                       LocalDate date) {
 }

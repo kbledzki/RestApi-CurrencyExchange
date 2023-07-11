@@ -20,7 +20,6 @@ import java.time.LocalDate;
 public class CurrencyExchangeController {
     private final CurrencyExchangeService service;
 
-
     @GetMapping("average/{currencyCode}/{date}")
     public ResponseEntity<AverageExchangeRateResponse> getAverageExchangeRate(@PathVariable("currencyCode") String currencyCode,
                                                                               @PathVariable("date") @DateTimeFormat(pattern = "yyyy-MM-dd") LocalDate date
